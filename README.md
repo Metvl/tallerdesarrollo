@@ -1,2 +1,19 @@
-# tallerdesarrollo
-Proyecto semestral taller de desarrollo, página web prácticas profesionales 1 y 2 de la facultad de ciencias empresariales
+# pp-face
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
