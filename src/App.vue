@@ -2,12 +2,24 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/crearoferta">Crear</router-link>
+    <router-link to="/crearoferta">Crear</router-link> |
+    <router-link to="/registro">Registro</router-link> |
+    <router-link to="/inforegistro">Info Registro</router-link> |
+    <router-link to="/login">Log In</router-link>
+
   </nav>
   <router-view/>
 </template>
 
+
+
+
 <style>
+html,body{
+  margin: 0px;
+  padding: 0px;
+  font-family: Ubuntu,'Helvetica Neue';
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

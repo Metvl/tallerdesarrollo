@@ -16,6 +16,21 @@ const routes = [
     path: '/crearoferta',
     name: 'crearoferta',
     component: () => import('../views/CrearOfertaView.vue')
+  },
+  {
+    path: '/registro',
+    name: 'registro',
+    component: () => import('../views/RegistroView.vue')
+  },
+  {
+    path: '/inforegistro',
+    name: 'inforegistro',
+    component: () => import('../views/InformacionRegistroView.vue')
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/LoginView.vue')
   }
 ]
 
