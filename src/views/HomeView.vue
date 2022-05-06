@@ -3,6 +3,7 @@
     <!--<HelloWorld msg="Welcome to Your Vue.js App"/>
     <h3>pablo te amo tanto uwu</h3>
     -->
+    <h3>pablo te amo tanto uwu</h3>
   </div>
 </template>
 

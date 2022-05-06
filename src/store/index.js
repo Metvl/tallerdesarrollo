@@ -18,6 +18,7 @@ export default createStore({
   mutations: {
     set(state, payload){
       state.registros.push(payload);
+      
     },
     cargar(state, payload){
       state.registros = payload;
@@ -39,14 +40,23 @@ export default createStore({
       }
       commit('set', registro);
     },
-    cargarDatosFirebase({commit}){
-      if(localStorage.getItem('registros')){
-        const registros = JSON.parse(localStorage.getItem('registros'));
-        commit('cargar', registros);
-        return
-      }
-      localStorage.setItem('registros'. JSON.stringify([]));
+    async cargarLocalStorage({commit}){
+      try {
+        const res = await fetch('https://pp-face-default-rtdb.firebaseio.com/registros.json');
+        const dataBD = await res.json();
+        const arrayRegistro = [];
+        //console.log(dataBD);
+        for(let id in dataBD){
+          //console.log(id);
+          //console.log(dataBD[id]);
+          arrayRegistro.push(dataBD[id])
+        }
+        console.log(arrayRegistro);
+        commit('cargar', arrayRegistro)
 
+      } catch (error) {
+        console.log(error);
+      }
     },
   },
   modules: {
